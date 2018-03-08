@@ -14,6 +14,7 @@ import Icon from 'react-native-vector-icons/Ionicons'
 import IconFA from 'react-native-vector-icons/FontAwesome'
 
 import util from './views/util'
+import Day1 from './views/day1'
 
 class Home extends Component {
 
@@ -291,7 +292,8 @@ class Home extends Component {
 }
 
 const App = StackNavigator({
-  Home: {screen: Home}
+  Home: {screen: Home},
+  Day1: {screen: Day1}
 }, {
   navigationOptions: {
     headerBackTitle: '返回'
