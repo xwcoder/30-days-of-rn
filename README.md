@@ -12,7 +12,7 @@ RN练手，将[30-days-of-react-native](https://github.com/fangwei716/30-days-of
 - [ ] day-4: cocoapods
 - [ ] day-5: find my location
 - [ ] day-6: Spotify
-- [ ] day-7: Moveable Circle
+- [x] day-7: Moveable Circle
 - [ ] day-8: Swipe Left Menu
 - [ ] day-9: Twitter Parallax View
 - [ ] day-10: Tumblr Menu

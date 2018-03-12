@@ -16,6 +16,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 import util from './views/util'
 import Day1 from './views/day1'
+import Day7 from './views/day7'
 
 const getIconComponent = type => {
 
@@ -338,7 +339,8 @@ class Home extends Component {
 
 const App = StackNavigator({
   Home: {screen: Home},
-  Day1: {screen: Day1}
+  Day1: {screen: Day1},
+  Day7: {screen: Day7}
 }, {
   navigationOptions: {
     headerBackTitle: '返回'
