@@ -16,6 +16,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 import util from './views/util'
 import Day1 from './views/day1'
+import Day3 from './views/day3'
 import Day7 from './views/day7'
 
 const getIconComponent = type => {
@@ -67,8 +68,8 @@ class Home extends Component {
       },{
         key:2,
         title:"twitter",
-        isFA: false,
-        icon: "social-twitter",
+        iconType: 'fa',
+        icon: "twitter",
         size:50,
         color:"#2aa2ef",
         hideNav: true,
@@ -340,6 +341,12 @@ class Home extends Component {
 const App = StackNavigator({
   Home: {screen: Home},
   Day1: {screen: Day1},
+  Day3: {
+    screen: Day3,
+    navigationOptions: {
+      header: null
+    }
+  },
   Day7: {screen: Day7}
 }, {
   navigationOptions: {
