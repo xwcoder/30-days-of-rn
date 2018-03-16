@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import {
   AppRegistry,
   View,
@@ -8,7 +8,7 @@ import {
   ScrollView,
   TouchableHighlight
 } from 'react-native'
-import {StackNavigator} from 'react-navigation'
+import { StackNavigator } from 'react-navigation'
 import Swiper from 'react-native-swiper'
 import Ionicon from 'react-native-vector-icons/Ionicons'
 import IconFA from 'react-native-vector-icons/FontAwesome'
@@ -18,6 +18,9 @@ import util from './views/util'
 import Day1 from './views/day1'
 import Day3 from './views/day3'
 import Day7 from './views/day7'
+import Day20 from './views/day20'
+
+console.disableYellowBox = true
 
 const getIconComponent = type => {
 
@@ -347,7 +350,13 @@ const App = StackNavigator({
       header: null
     }
   },
-  Day7: {screen: Day7}
+  Day7: {screen: Day7},
+  Day20: {
+    screen: Day20,
+    navigationOptions: {
+      header: null
+    }
+  }
 }, {
   navigationOptions: {
     headerBackTitle: '返回'
@@ -395,4 +404,5 @@ const styles = StyleSheet.create({
   }
 })
 
-AppRegistry.registerComponent('ThirtyDaysOfRN', () => App)
+//AppRegistry.registerComponent('ThirtyDaysOfRN', () => App)
+AppRegistry.registerComponent('ThirtyDaysOfRN', () => Day20)
