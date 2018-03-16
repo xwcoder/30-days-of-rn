@@ -8,7 +8,7 @@ RN练手，将[30-days-of-react-native](https://github.com/fangwei716/30-days-of
 - [x] day-0: index page
 - [x] day-1: A stopwatch
 - [ ] day-2: A weather app
-- [ ] day-3: twitter
+- [x] day-3: twitter
 - [ ] day-4: cocoapods
 - [ ] day-5: find my location
 - [ ] day-6: Spotify
