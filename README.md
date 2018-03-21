@@ -25,7 +25,7 @@ RN练手，将[30-days-of-react-native](https://github.com/fangwei716/30-days-of
 - [ ] day-17: Fuzzy search
 - [ ] day-18: Sortable
 - [ ] day-19: TouchID to unlock
-- [ ] day-20: Single page Reminder
+- [x] day-20: Single page Reminder
 - [ ] day-21: Multi page Reminder
 - [ ] day-22: Google Now
 - [ ] day-23: Local WebView
