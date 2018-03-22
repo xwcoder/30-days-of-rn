@@ -26,7 +26,7 @@ RN练手，将[30-days-of-react-native](https://github.com/fangwei716/30-days-of
 - [ ] day-18: Sortable
 - [ ] day-19: TouchID to unlock
 - [x] day-20: Single page Reminder
-- [ ] day-21: Multi page Reminder
+- [x] day-21: Multi page Reminder
 - [ ] day-22: Google Now
 - [ ] day-23: Local WebView
 - [ ] day-24: Youtube scrollable tab

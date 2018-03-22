@@ -116,7 +116,7 @@ class ReminderList extends Component {
   }
 }
 
-class ReminderSheet extends Component {
+export class ReminderSheet extends Component {
 
   static defaultProps = {
     title: '提醒事项',
@@ -197,12 +197,14 @@ class ReminderSheet extends Component {
     let length = list.filter(item => !item.selected).length
 
     return (
-      <View style={styles.reminderSheet}>
+      <View style={[styles.reminderSheet, this.props.sheetStyle]}>
         <Image style={styles.remiderSheetBg} source={require('./img/packed.png')} />
-        <View style={styles.sheetTitleContainer}>
-          <Text style={[styles.sheetTitle, {color: theme}]}>{title}</Text>
-          <Text style={[styles.sheetTitle, {color: theme}]}>{length}</Text>
-        </View>
+        <TouchableHighlight underlayColor='transparent' onPress={this.props.switchSheet}>
+          <View style={styles.sheetTitleContainer}>
+            <Text style={[styles.sheetTitle, {color: theme}]}>{title}</Text>
+            <Text style={[styles.sheetTitle, {color: theme}]}>{length}</Text>
+          </View>
+        </TouchableHighlight>
         <View style={{flex: 1}}>
           <ReminderList addItem={this.addItem} onEndEditing={this.onEndEditing} onClick={this.onClick} list={list} theme={theme}/>
         </View>
@@ -218,7 +220,6 @@ export default class extends Component {
 
     this.listData = {
       title:"Development",
-      numOfItems:6,
       theme:"#fe952b",
       list:[{
         selected: false,

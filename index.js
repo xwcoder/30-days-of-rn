@@ -19,6 +19,7 @@ import Day1 from './views/day1'
 import Day3 from './views/day3'
 import Day7 from './views/day7'
 import Day20 from './views/day20'
+import Day21 from './views/day21'
 
 console.disableYellowBox = true
 
@@ -356,6 +357,12 @@ const App = StackNavigator({
     navigationOptions: {
       header: null
     }
+  },
+  Day21: {
+    screen: Day21,
+    navigationOptions: {
+      header: null
+    }
   }
 }, {
   navigationOptions: {
@@ -404,5 +411,5 @@ const styles = StyleSheet.create({
   }
 })
 
-//AppRegistry.registerComponent('ThirtyDaysOfRN', () => App)
-AppRegistry.registerComponent('ThirtyDaysOfRN', () => Day20)
+AppRegistry.registerComponent('ThirtyDaysOfRN', () => App)
+//AppRegistry.registerComponent('ThirtyDaysOfRN', () => Day21)
